@@ -1,24 +1,9 @@
-# README
+# HTTP Networking sample "Meemoo" app by Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Summary
 
-Things you may want to cover:
+This is the simple sample "Meemoo" app by Ruby on Rails
+This contains minimum functions needed as server-client application
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Client side
+https://github.com/yogoken/Memo/tree/master
