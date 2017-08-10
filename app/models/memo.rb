@@ -1,3 +1,2 @@
-class Memo < ApplicationRecord
-  validates :text, presence: true
+class Memo < ActiveRecord::Base
 end
