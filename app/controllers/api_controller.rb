@@ -1,5 +1,5 @@
 # coding: utf-8
-class ApiController < ApplicationController
+class Api::ApplicationController
   rescue_from Exception, with: :error500
   rescue_from ActiveRecord::RecordNotFound, ActionController::RoutingError, with: :error404
 
@@ -12,7 +12,7 @@ class ApiController < ApplicationController
 
   def error422(messages)
     render json: {
-        message: 'Unprocessable Entity',
+        message: 'Unprocessable Memo',
         errors: messages
     }, status: 422
   end
@@ -25,14 +25,12 @@ class ApiController < ApplicationController
 
   def error404
     render json: {
-        status: 404,
         message: 'Not Found'
     }, status: 404
   end
 
   def error500(e)
     render json: {
-        status: 500,
         message: 'Internal Server Error'
     }, status: 500
   end
